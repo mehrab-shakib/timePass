@@ -1,0 +1,193 @@
+body {
+    font-family: 'Russo One', sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#home {
+    background: transparent;
+}
+
+#about {
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+#about p {
+    font-size: 1.3em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+    margin-left: 5px;
+}
+
+#about h2 {
+    font-size: 3em;
+    letter-spacing: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+    #about p {
+        font-size: 1.2em;
+        margin-bottom: 15px;
+        margin-left: 5px;
+    }
+
+    #about h2 {
+        font-size: 3em;
+    }
+}
+
+#skills,
+#projects,
+#contact {
+    background: rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .section {
+        padding: 10px;
+    }
+}
+
+#skills ul {
+    font-size: 1.5em;
+    list-style: none;
+    padding: 0;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.skill-logo img {
+    max-height: 30px; /* Adjust the size as needed */
+    width: auto;
+    margin-right: 10px;
+}
+
+.skill-name {
+    font-size: 1.3em;
+}
+
+#skills li {
+    margin-bottom: 10px;
+}
+
+#skills h2 {
+    font-size: 3em;
+    letter-spacing: 4px;
+    text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+    #skills ul {
+        font-size: 1.2em;
+    }
+}
+
+.contact-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.contact-icons img {
+    width: 30px;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 300%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 40px;
+}
+
+.text-container h1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5em;
+    letter-spacing: 4px;
+}
+
+.text-container p {
+    font-size: 1.5em;
+    letter-spacing: 4px;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: -50px;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #bbb;
+    transition: bottom 0.3s ease;
+}
+
+a:hover {
+    color: #ffcc00;
+}
+
+.contact-icons a:hover img {
+    filter: brightness(1.5);
+}
+
+@media only screen and (max-width: 768px) {
+    .text-container h1 {
+        font-size: 3em;
+    }
+
+    .text-container p {
+        font-size: 1.2em;
+        margin-left: 15px;
+    }
+}
+
+footer.visible {
+    bottom: 0;
+}
+
+footer::before {
+    content: none;
+}
